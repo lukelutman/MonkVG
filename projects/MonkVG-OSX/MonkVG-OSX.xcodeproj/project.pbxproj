@@ -319,6 +319,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DSTROOT)/usr/local/lib/include\"",
+				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "MonkVG-OSX";
 				PUBLIC_HEADERS_FOLDER_PATH = include/MonkVG;
@@ -335,6 +339,10 @@
 					"\"$(SRCROOT)/../../Frameworks\"",
 				);
 				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DSTROOT)/usr/local/lib/include\"",
+				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = "MonkVG-OSX";
 				PUBLIC_HEADERS_FOLDER_PATH = include/MonkVG;
@@ -347,6 +355,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -359,6 +368,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = macosx;
